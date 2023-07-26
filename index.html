@@ -17,18 +17,23 @@
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
-            }
-          }
-        }
-      }
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
     </script>
     <!--*** shared styles Font Lato***-->
     <style>
       .fruit-font {
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
       }
     </style>
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/5122a2bb74.js"
+      crossorigin="anonymous"
+    ></script>
     <!--*** Tailwind css and Daisy UI cdn ***-->
 
     <link
@@ -40,13 +45,184 @@
   </head>
   <body class="fruit-font">
     <header>
-      
+      <!-- nav section  -->
+
+      <div class="navbar text-white bg-[#F85559] rounded-full max-w-screen-xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu text-base menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center flex ">
+          <img src="./images/logo.png" alt="" />
+          <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+        </div>
+        <div class="navbar-end">
+          <div class="relative">
+            <input
+              type="text"
+              class="pl-10 pr-3 py-2 border rounded-full text-gray-900 focus:outline-none focus:border-blue-500"
+              placeholder="Search..."
+            />
+            <span
+              class="absolute inset-y-0 left-3 flex items-center text-gray-500"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="carousel w-full mt-14">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+          >
+            <h2 class="text-7xl font-extrabold text-white">
+              Exotic tastes at your doorstep
+            </h2>
+            <p class="text-xl text-white">
+              We supply highly quality organic products
+            </p>
+            <button class="mt-4 px-4 py-2 bg-[#F85559] text-white rounded-lg">
+              Shop Now
+            </button>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+          >
+            <h2 class="text-7xl font-extrabold text-white">
+              Fruit Brust Upcoming
+            </h2>
+            <p class="text-xl text-white">
+              Sign in to our website for more info.
+            </p>
+            <button class="mt-4 px-4 py-2 bg-[#F85559] text-white rounded-lg">
+              Button 2
+            </button>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+          >
+            <h2 class="text-7xl font-extrabold text-white">
+              Fruit Brust Upcoming
+            </h2>
+            <p class="text-xl text-white">
+              Sign in to our website for more info.
+            </p>
+            <button class="mt-4 px-4 py-2 bg-[#F85559] text-white rounded-lg">
+              Button 3
+            </button>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner4.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+          >
+            <h2 class="text-7xl font-extrabold text-white">
+              Fruit Brust Upcoming
+            </h2>
+            <p class="text-xl text-white">
+              Sign in to our website for more info.
+            </p>
+            <button class="mt-4 px-4 py-2 bg-[#F85559] text-white rounded-lg">
+              Button 4
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- on-top section -->
+      <div class="relative -mt-20 shadow-lg rounded-lg max-w-[1196px] mx-auto  justify-center text-center bg-white flex">
+        <div>
+          <img src="./images/fruit1.png" alt="" />
+          <p class="text-center">Grapes</p>
+        </div>
+        <div>
+          <img src="./images/fruit2.png" alt="" />
+          <p>Orange</p>
+        </div>
+        <div>
+          <img src="./images/fruit3.png" alt="" />
+          <p>Mango</p>
+        </div>
+        <div>
+          <img src="./images/fruit4.png" alt="" />
+          <p>Strawberry</p>
+        </div>
+        <div>
+          <img src="./images/fruit5.png" alt="" />
+          <p>Pomegranate</p>
+        </div>
+      </div>
     </header>
     <main>
-
+      
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
